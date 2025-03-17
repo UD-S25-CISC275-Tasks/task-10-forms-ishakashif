@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 
-<<<<<<< HEAD
 const holidays = [
     { name: "Halloween", emoji: "🎃", month: 10, day: 31 },
     { name: "Eid", emoji: "🌙", month: 5, day: 5 },
@@ -70,8 +69,4 @@ export function CycleHoliday(): React.JSX.Element {
             </Button>
         </div>
     );
-=======
-export function CycleHoliday(): React.JSX.Element {
-    return <div>Cycle Holiday</div>;
->>>>>>> origin/task-forms
 }
