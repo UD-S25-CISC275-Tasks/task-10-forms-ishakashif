@@ -11,6 +11,7 @@ const PEOPLE = [
 ];
 
 export function ChooseTeam(): React.JSX.Element {
+<<<<<<< HEAD
     const [team, setTeam] = useState<string[]>([]);
 
     function chooseMember(newMember: string): void {
@@ -24,6 +25,23 @@ export function ChooseTeam(): React.JSX.Element {
 
     function clearTeam(): void {
         setTeam([]);
+=======
+    const [allOptions, setAllOptions] = useState<string[]>(PEOPLE);
+    const [team, setTeam] = useState<string[]>([]);
+
+    function chooseMember() {
+        /*
+        if (!team.includes(newMember)) {
+            team.push(newMember);
+        }
+        */
+    }
+
+    function clearTeam() {
+        /*
+        team = [];
+        */
+>>>>>>> origin/task-forms
     }
 
     return (
@@ -31,6 +49,7 @@ export function ChooseTeam(): React.JSX.Element {
             <h3>Choose Team</h3>
             <Row>
                 <Col>
+<<<<<<< HEAD
                     {PEOPLE.map((option: string) => (
                         <div key={option} style={{ marginBottom: "4px" }}>
                             Add{" "}
@@ -40,6 +59,12 @@ export function ChooseTeam(): React.JSX.Element {
                                 }}
                                 size="sm"
                             >
+=======
+                    {allOptions.map((option: string) => (
+                        <div key={option} style={{ marginBottom: "4px" }}>
+                            Add{" "}
+                            <Button onClick={chooseMember} size="sm">
+>>>>>>> origin/task-forms
                                 {option}
                             </Button>
                         </div>
@@ -50,6 +75,7 @@ export function ChooseTeam(): React.JSX.Element {
                     {team.map((member: string) => (
                         <li key={member}>{member}</li>
                     ))}
+<<<<<<< HEAD
                     <Button
                         onClick={() => {
                             clearTeam();
@@ -57,6 +83,9 @@ export function ChooseTeam(): React.JSX.Element {
                     >
                         Clear Team
                     </Button>
+=======
+                    <Button onClick={clearTeam}>Clear Team</Button>
+>>>>>>> origin/task-forms
                 </Col>
             </Row>
         </div>
