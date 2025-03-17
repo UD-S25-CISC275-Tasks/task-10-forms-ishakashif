@@ -5,13 +5,6 @@ import { RevealAnswer } from "./components/RevealAnswer";
 import { StartAttempt } from "./components/StartAttempt";
 import { TwoDice } from "./components/TwoDice";
 import { CycleHoliday } from "./components/CycleHoliday";
-<<<<<<< HEAD
-// import { Counter } from "./components/Counter";
-import { DoubleHalf } from "./bad-components/DoubleHalf";
-import { ColoredBox } from "./bad-components/ColoredBox";
-// import { ShoveBox } from "./bad-components/ShoveBox";
-import { ChooseTeam } from "./bad-components/ChooseTeam";
-=======
 import { Counter } from "./components/Counter";
 import { DoubleHalf } from "./bad-components/DoubleHalf";
 import { ColoredBox } from "./bad-components/ColoredBox";
@@ -22,7 +15,6 @@ import { GiveAttempts } from "./form-components/GiveAttempts";
 import { EditMode } from "./form-components/EditMode";
 import { MultipleChoiceQuestion } from "./form-components/MultipleChoiceQuestion";
 import { ChangeColor } from "./form-components/ChangeColor";
->>>>>>> origin/task-forms
 
 function App(): React.JSX.Element {
     return (
@@ -31,9 +23,6 @@ function App(): React.JSX.Element {
                 UD CISC275 with React Hooks and TypeScript
             </header>
             <hr></hr>
-<<<<<<< HEAD
-            <DoubleHalf></DoubleHalf>
-=======
             <CheckAnswer expectedAnswer="42"></CheckAnswer>
             <hr></hr>
             <GiveAttempts></GiveAttempts>
@@ -47,22 +36,15 @@ function App(): React.JSX.Element {
                 expectedAnswer="b"
             ></MultipleChoiceQuestion>
             <hr></hr>
-            {/* <DoubleHalf></DoubleHalf> */}
->>>>>>> origin/task-forms
+            <DoubleHalf></DoubleHalf>
             <hr></hr>
             <ChooseTeam></ChooseTeam>
             <hr></hr>
             <ColoredBox></ColoredBox>
             <hr></hr>
-<<<<<<< HEAD
-            {/* <ShoveBox></ShoveBox> */}
-            <hr></hr>
-            {/* <Counter></Counter> */}
-=======
             <ShoveBox></ShoveBox>
             <hr></hr>
             <Counter></Counter>
->>>>>>> origin/task-forms
             <hr />
             <RevealAnswer></RevealAnswer>
             <hr />
